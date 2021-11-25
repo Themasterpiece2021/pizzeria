@@ -2,9 +2,7 @@ import express, { application } from "express";
 import cors from "cors";
 import db from "./db/db.js";
 import dotenv from "dotenv";
-<<<<<<< HEAD
 import order from "./routes/order.js";
-=======
 
 import pizza from "./routes/pizza.js";
 
@@ -12,7 +10,6 @@ import role from  "./routes/role.js";
 import user from  "./routes/user.js";
 
 
->>>>>>> cd91c0486cad6785d9c6f89bb3593efd8bb33797
 dotenv.config();
 
 const app = express();
