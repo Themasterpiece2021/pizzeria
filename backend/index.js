@@ -2,6 +2,7 @@ import express, { application } from "express";
 import cors from "cors";
 import db from "./db/db.js";
 import dotenv from "dotenv";
+import order from "./routes/order.js";
 
 import pizza from "./routes/pizza.js";
 
@@ -15,6 +16,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
+app.use("/api/order", order);
 
 app.use("/api/pizza", pizza);
 
